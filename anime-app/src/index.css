@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+}
+
+/* TITULOS */
+.page-title {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 2.5rem;
+  color: #facc15;
+}
+
+/* MENSAJES CENTRADOS */
+.center-message {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* GRID HOME */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px 80px;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* DETAIL PAGE */
+.detail-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.detail-card {
+  background-color: #1e293b;
+  border-radius: 25px;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.detail-card img {
+  width: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.detail-info {
+  flex: 1;
+}
+
+.detail-info h1 {
+  margin-bottom: 20px;
+}
+
+.detail-info ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+.detail-info p {
+  margin-bottom: 15px;
+  color: #cbd5e1;
+}
